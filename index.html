@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Planner</h1>
+
+        <div class="task-input">
+            <input type="text" id="task-title" placeholder="Task Title">
+            <input type="date" id="task-due-date">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <div class="filter-options">
+            <button id="show-all">All</button>
+            <button id="show-active">Active</button>
+            <button id="show-completed">Completed</button>
+        </div>
+
+        <ul id="task-list">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+
+        <div class="progress-container">
+            <h2>Overall Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+            <p id="progress-text">0% Complete</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
